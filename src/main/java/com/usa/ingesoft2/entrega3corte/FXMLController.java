@@ -1,6 +1,7 @@
 package com.usa.ingesoft2.entrega3corte;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXDatePicker;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -17,8 +18,16 @@ public class FXMLController implements Initializable {
     private JFXButton buscarReportes;
     
     @FXML
+    private JFXDatePicker fechaInicio;
+    @FXML
+    private JFXDatePicker fechaCierre;
+    
+    @FXML
     private void buscarReportesOnAction(ActionEvent event){
         System.out.println("Accion buscar reportes");
+        System.out.println("DATE PICKER INFO INICIO:"+fechaInicio.getValue());
+        System.out.println("DATE PICKER INFO CIERRE:"+fechaCierre.getValue());
+        //FORMAT: Year/Month/Day
     }
     
     @FXML
