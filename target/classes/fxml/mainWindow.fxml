@@ -16,24 +16,24 @@
             <Font name="Tw Cen MT Condensed Extra Bold" size="36.0" />
          </font>
       </Label>
-      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="134.0" onAction="#registrarAlbumOnAction" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: #ffb300;" text="Registrar Albúm" textFill="WHITE" textOverrun="CLIP">
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="130.0" onAction="#registrarCancionOnAction" prefHeight="48.0" prefWidth="384.0" style="-fx-background-color: #7cb342;" text="Registrar Canción" textFill="WHITE">
          <font>
-            <Font name="TI-Nspire Sans Regular" size="19.0" />
+            <Font size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="308.0" onAction="#reportesOnAction" prefHeight="50.0" prefWidth="570.0" style="-fx-background-color: #ff8f00;" text="Reportes" textFill="WHITE" textOverrun="CLIP">
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="214.0" onAction="#registrarAlbumOnAction" prefHeight="48.0" prefWidth="384.0" style="-fx-background-color: #7cb342;" text="Registrar Albúm" textFill="WHITE">
          <font>
-            <Font name="TI-Nspire Sans Regular" size="19.0" />
+            <Font size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="215.0" onAction="#registrarCancionOnAction" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: #ffb300;" text="Registrar Canción" textFill="WHITE" textOverrun="CLIP">
+      <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="299.0" onAction="#reportesOnAction" prefHeight="76.0" prefWidth="555.0" style="-fx-background-color: #7cb342;" text="Reportes" textFill="WHITE">
          <font>
-            <Font name="TI-Nspire Sans Regular" size="19.0" />
+            <Font size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="325.0" layoutY="134.0" onAction="#crearCierreOnAction" prefHeight="134.0" prefWidth="255.0" style="-fx-background-color: #ff8f00;" text="Crear Cierre" textFill="WHITE" textOverrun="CLIP">
+      <JFXButton buttonType="RAISED" layoutX="439.0" layoutY="128.0" onAction="#crearCierreOnAction" prefHeight="137.0" prefWidth="137.0" style="-fx-background-color: #7cb342;" text="Crear Cierre" textFill="WHITE">
          <font>
-            <Font name="TI-Nspire Sans Regular" size="19.0" />
+            <Font size="15.0" />
          </font>
       </JFXButton>
    </children>

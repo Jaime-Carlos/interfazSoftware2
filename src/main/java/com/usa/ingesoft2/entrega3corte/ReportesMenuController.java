@@ -24,30 +24,20 @@ import javafx.stage.Stage;
  *
  * @author james
  */
-public class MainWindowController implements Initializable {
+public class ReportesMenuController implements Initializable {
 
     /**
      * Initializes the controller class.
-     */ 
+     */
     
     @FXML
-    private void registrarAlbumOnAction(ActionEvent event) {
-        System.out.println("You clicked registrar album!");
+    private void sencillosOnAction(ActionEvent event){
+        System.out.println("Sencillos On Action");
     }
     
     @FXML
-    private void registrarCancionOnAction(ActionEvent event) {
-        System.out.println("You clicked registrar cancion!");
-    }
-    
-    @FXML
-    private void crearCierreOnAction(ActionEvent event) {
-        System.out.println("You clicked registrar cierre!");
-    }
-    
-    @FXML
-    private void reportesOnAction(ActionEvent event) throws IOException {
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("/fxml/reportesMenu.fxml"));
+    private void albumsOnAction(ActionEvent event)throws IOException{
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
         Scene home_scene_page = new Scene(home_page_parent);
         Stage app_stage = new Stage();
         Stage main_app = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -56,13 +46,24 @@ public class MainWindowController implements Initializable {
         app_stage.getIcons().add(new Image("img/mainIcon.png"));
         app_stage.initOwner(main_app);
         app_stage.setResizable(false);
-        app_stage.setTitle("Tipos de Reportes - Music App!");
+        app_stage.setTitle("Reporte de Venta por Albúm - Music App!");
         app_stage.initModality(Modality.APPLICATION_MODAL);
         app_stage.showAndWait();
+    }
+    
+    @FXML
+    private void interpreteOnAction(ActionEvent event){
+        System.out.println("Interprete On Action");
+    }
+    
+    @FXML
+    private void ventasEnAlbumOnAction(ActionEvent event){
+        System.out.println("Ventas En Album On Action");
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }   
+    }    
+    
 }
