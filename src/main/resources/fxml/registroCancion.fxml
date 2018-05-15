@@ -9,12 +9,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="284.0" style="-fx-background-color: #aed581;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="com.usa.ingesoft2.entrega3corte.RegistroCancionController">
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="284.0" style="-fx-background-color: #aed581;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.usa.ingesoft2.entrega3corte.RegistroCancionController">
     <stylesheets>
         <URL value="@/styles/Styles.css" />
     </stylesheets>
    <children>
-      <Spinner fx:id="spinner" layoutX="36.0" layoutY="244.0" prefHeight="26.0" prefWidth="210.0" />
+      <Spinner fx:id="spinner" layoutX="31.0" layoutY="244.0" prefHeight="26.0" prefWidth="220.0" />
       <Label layoutX="26.0" layoutY="14.0" prefHeight="82.0" prefWidth="242.0" text="Venta de Canción" textFill="WHITE" textOverrun="CLIP">
          <font>
             <Font name="Tw Cen MT Condensed Extra Bold" size="36.0" />
@@ -30,9 +30,9 @@
             <Font name="Tw Cen MT Condensed Extra Bold" size="25.0" />
          </font>
       </Label>
-      <JFXComboBox focusColor="#7cb342" layoutX="41.0" layoutY="154.0" prefHeight="26.0" prefWidth="210.0" unFocusColor="#7cb342" />
-      <JFXDatePicker defaultColor="#7cb342" layoutX="36.0" layoutY="307.0" prefHeight="28.0" prefWidth="210.0" promptText="Fecha de Venta" stylesheets="@../styles/Styles.css" />
-      <JFXButton buttonType="RAISED" layoutX="36.0" layoutY="356.0" onAction="#registrarCancionOnAction" prefHeight="48.0" prefWidth="210.0" style="-fx-background-color: #7cb342;" text="Efectuar Venta" textFill="WHITE">
+      <JFXComboBox focusColor="#7cb342" layoutX="41.0" layoutY="154.0" prefHeight="26.0" prefWidth="210.0" promptText="Seleccione una Canción" style="-fx-prompt-text-fill: #ffffff;" unFocusColor="#7cb342" />
+      <JFXDatePicker defaultColor="#7cb342" layoutX="36.0" layoutY="307.0" prefHeight="28.0" prefWidth="220.0" promptText="Fecha de Venta" stylesheets="@../styles/Styles.css" />
+      <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="355.0" prefHeight="48.0" prefWidth="210.0" style="-fx-background-color: #7cb342;" text="Efectuar Venta" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>

@@ -31,12 +31,33 @@ public class ReportesMenuController implements Initializable {
      */
     
     @FXML
-    private void sencillosOnAction(ActionEvent event){
-        System.out.println("Sencillos On Action");
+    private void sencillosOnAction(ActionEvent event) throws IOException{
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("/fxml/reporteListaSencillos.fxml"));
+        Scene home_scene_page = new Scene(home_page_parent);
+        Stage app_stage = new Stage();
+        Stage main_app = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        //(Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_stage.setScene(home_scene_page);
+        app_stage.getIcons().add(new Image("img/mainIcon.png"));
+        app_stage.initOwner(main_app);
+        app_stage.setResizable(false);
+        app_stage.setTitle("Reporte Ventas - Sencillos");
+        app_stage.initModality(Modality.APPLICATION_MODAL);
+        app_stage.showAndWait();
     }
     
     @FXML
     private void albumsOnAction(ActionEvent event)throws IOException{
+        System.out.println("Lista de albumes");
+    }
+    
+    @FXML
+    private void interpreteOnAction(ActionEvent event){
+        System.out.println("Interprete On Action");
+    }
+    
+    @FXML
+    private void ventasEnAlbumOnAction(ActionEvent event) throws IOException{
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
         Scene home_scene_page = new Scene(home_page_parent);
         Stage app_stage = new Stage();
@@ -46,19 +67,9 @@ public class ReportesMenuController implements Initializable {
         app_stage.getIcons().add(new Image("img/mainIcon.png"));
         app_stage.initOwner(main_app);
         app_stage.setResizable(false);
-        app_stage.setTitle("Reporte de Venta por Albúm - Music App!");
+        app_stage.setTitle("Reporte de Venta - Canciones en Albúm");
         app_stage.initModality(Modality.APPLICATION_MODAL);
         app_stage.showAndWait();
-    }
-    
-    @FXML
-    private void interpreteOnAction(ActionEvent event){
-        System.out.println("Interprete On Action");
-    }
-    
-    @FXML
-    private void ventasEnAlbumOnAction(ActionEvent event){
-        System.out.println("Ventas En Album On Action");
     }
     
     @Override
