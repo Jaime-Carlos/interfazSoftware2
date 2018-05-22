@@ -49,6 +49,19 @@ public class ReportesMenuController implements Initializable {
     @FXML
     private void albumsOnAction(ActionEvent event)throws IOException{
         System.out.println("Lista de albumes");
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("/fxml/reporteListaAlbums.fxml"));
+        Scene home_scene_page = new Scene(home_page_parent);
+        Stage app_stage = new Stage();
+        Stage main_app = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        //(Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_stage.setScene(home_scene_page);
+        app_stage.getIcons().add(new Image("img/mainIcon.png"));
+        app_stage.initOwner(main_app);
+        app_stage.setResizable(false);
+        app_stage.setTitle("Reporte de Venta - Albums vendidos por Interprete");
+        app_stage.initModality(Modality.APPLICATION_MODAL);
+        app_stage.showAndWait();
+        
     }
     
     @FXML
